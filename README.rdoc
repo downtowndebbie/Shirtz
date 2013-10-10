@@ -1,0 +1,35 @@
+== README
+Shirt Management App
+
+Used for General Assembly's BEWD Class lesson 9 (Models, Migrations and Active Record)
+
+- rails new holy_shirt
+
+- rails g model shirt name:string description:string
+
+- rake db:migrate
+
+- rails c
+ - Shirt
+ - Shirt.create
+ - Shirt.first
+ - Shirt.all
+ - s = Shirt.first
+ - s.name
+ - s.description
+
+- rails g migration add_image_to_shirts
+
+- add_column :shirts, :image, :string 
+
+- rake db:migrate
+
+- rails c
+ - Shirt.first
+ - add image
+
+- add seeds.rb https://gist.github.com/6857197
+
+- rake db:seed
+
+- rails c
